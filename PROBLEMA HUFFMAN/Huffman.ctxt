@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Huffman
+comment0.text=\r\n\ Aggiungi\ qui\ una\ descrizione\ della\ classe\ Huffman\r\n\ \r\n\ @author\ (il\ tuo\ nome)\ \r\n\ @version\ (un\ numero\ di\ versione\ o\ una\ data)\r\n
+comment1.params=
+comment1.target=int[]\ chrFreq()
+comment2.params=src
+comment2.target=int\ chrCount(java.lang.String)
+comment3.params=
+comment3.target=Node\ huffmanTree()
+comment4.params=
+comment4.target=java.lang.String[]\ huffmanTable()
+comment5.params=n\ hc\ tab
+comment5.target=void\ fillTab(Node,\ java.lang.String,\ java.lang.String[])
+comment6.params=src\ dst
+comment6.target=void\ compress(java.lang.String,\ java.lang.String)
+comment7.params=src\ dst
+comment7.target=void\ decompress(java.lang.String,\ java.lang.String)
+comment8.params=in\ n
+comment8.target=char\ restoreChar(huffman_toolkit.InputTextFile,\ Node)
+comment9.params=dst
+comment9.target=void\ textRandomizer(java.lang.String)
+numComments=10

@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=HuffmanTreeTab
+comment0.text=\r\n\ Aggiungi\ qui\ una\ descrizione\ della\ classe\ HuffmanTree\r\n\ \r\n\ @author\ (il\ tuo\ nome)\ \r\n\ @version\ (un\ numero\ di\ versione\ o\ una\ data)\r\n
+comment1.params=
+comment1.target=int[]\ chrFreq()
+comment2.params=
+comment2.target=Node\ huffmanTree()
+comment3.params=
+comment3.target=java.lang.String[]\ huffmanTable()
+comment4.params=n\ hc\ tab
+comment4.target=void\ fillTab(Node,\ java.lang.String,\ java.lang.String[])
+numComments=5

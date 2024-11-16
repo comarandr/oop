@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=NodeQueue
+comment0.text=\r\n\ Aggiungi\ qui\ una\ descrizione\ della\ classe\ NodeQueue\r\n\ \r\n\ @author\ (il\ tuo\ nome)\ \r\n\ @version\ (un\ numero\ di\ versione\ o\ una\ data)\r\n
+comment1.params=
+comment1.target=NodeQueue()
+comment1.text=\r\n\ Costruttore\ degli\ oggetti\ di\ classe\ \ NodeQueue\r\n
+comment2.params=
+comment2.target=int\ size()
+comment3.params=
+comment3.target=Node\ peek()
+comment4.params=n
+comment4.target=void\ add(Node)
+comment5.params=
+comment5.target=Node\ poll()
+numComments=6
