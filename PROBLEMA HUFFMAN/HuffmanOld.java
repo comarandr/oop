@@ -65,54 +65,7 @@ public class HuffmanOld
        }
     }
     
-    /**procedura di compressione con passaggio di albero
-    public static Node compress (String src, String dst){
-        int[] freq = chrFreq(src);
-        Node tree = huffmanTree(freq);
-        String[] tab = huffmanTable(tree);
-        
-        InputTextFile in = new InputTextFile(src);
-        OutputTextFile out = new OutputTextFile(dst);
-        
-        out.writeTextLine(""+tree.weight() );
-        
-        while(in.textAvailable() ){
-            char c = in.readChar();
-            out.writeCode(tab[c]);
-        }
-        
-        in.close();
-        out.close();
-        return tree;
-    }
-    
-    //procedura di decompressione
-    public static void decompress(String src, String dst, Node root){
-        InputTextFile in = new InputTextFile(src);
-        OutputTextFile out = new OutputTextFile(dst);
-        int count = root.weight();
-        
-        for(int i=0;i<count;i=i+1){
-            char c = restoreChar(in,root);
-            out.writeChar(c);
-        }
-        in.close();
-        out.close();
-    }
-    
-    private static char restoreChar(InputTextFile in, Node n){
-        do{
-            int bit = in.readBit();
-            if (bit == 0){
-                n = n.left();
-            } else {
-                n = n.right();
-            }
-        }while(!n.isLeaf());
-        
-        return n.symbol();
-    }
-    */
+
    
      //senza passaggio di albero, ma con HEAT (intestazione)
     public static void compress (String src, String dst){

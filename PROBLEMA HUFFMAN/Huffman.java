@@ -9,26 +9,10 @@ import java.util.*;
  */
 public class Huffman
 {
-    public static final int[] freq  = chrFreq();
+
     public static final Node root  = huffmanTree();
     public static final String[] HuffTable = huffmanTable();
-    
-    //1 passo: calcolo frequenza caratteri //non più necessario
-        private static int[] chrFreq(){
-        int[] freq = new int [InputTextFile.CHARS];
-        InputTextFile in = new InputTextFile("ASCII.txt");
-        
-        for(int i = 0; i<128;i++){
-            in.readTextLine();
-            String val = in.readTextLine() ;
-            int value = Integer.parseInt(val);
-            freq[i] = value;
-            in.readTextLine();
-        
-        }
-        
-        return freq;
-    }
+
         //costa i cara    
         private static int chrCount(String src){
         InputTextFile in = new InputTextFile(src);
@@ -40,26 +24,7 @@ public class Huffman
         }
         return count;
     }
-    
-    //2 passo calcolo NODI/ALBERI
-    private static Node huffmanTree (){
-        NodeQueue queue = new NodeQueue();
-        for(int c=0; c<freq.length; c=c+1){
-            if(freq[c]>0){
-                Node n = new Node ( (char) c, freq[c] );
-                queue.add(n);
-            }
-        }
-        
-        while(queue.size()>1){
-            Node l = queue.poll();
-            Node r = queue.poll();
-            Node n = new Node (l,r);
-            queue.add(n);
-        }
-        
-        return queue.poll();
-    }
+
     
     //procedura che crea la tabella di huffman che associa carattere al peso
     private static String[] huffmanTable(){

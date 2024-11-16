@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=HuffmanOld
+comment0.text=\r\n\ Aggiungi\ qui\ una\ descrizione\ della\ classe\ Huffman\r\n\ \r\n\ @author\ (il\ tuo\ nome)\ \r\n\ @version\ (un\ numero\ di\ versione\ o\ una\ data)\r\n
+comment1.params=src
+comment1.target=int[]\ chrFreq(java.lang.String)
+comment2.params=freq
+comment2.target=Node\ huffmanTree(int[])
+comment3.params=root
+comment3.target=java.lang.String[]\ huffmanTable(Node)
+comment4.params=n\ hc\ tab
+comment4.target=void\ fillTab(Node,\ java.lang.String,\ java.lang.String[])
+comment5.params=src\ dst
+comment5.target=void\ compress(java.lang.String,\ java.lang.String)
+comment5.text=procedura\ di\ compressione\ con\ passaggio\ di\ albero\r\n\ \ \ \ public\ static\ Node\ compress\ (String\ src,\ String\ dst){\r\n\ \ \ \ \ \ \ \ int[]\ freq\ \=\ chrFreq(src);\r\n\ \ \ \ \ \ \ \ Node\ tree\ \=\ huffmanTree(freq);\r\n\ \ \ \ \ \ \ \ String[]\ tab\ \=\ huffmanTable(tree);\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ InputTextFile\ in\ \=\ new\ InputTextFile(src);\r\n\ \ \ \ \ \ \ \ OutputTextFile\ out\ \=\ new\ OutputTextFile(dst);\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ out.writeTextLine(""+tree.weight()\ );\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ while(in.textAvailable()\ ){\r\n\ \ \ \ \ \ \ \ \ \ \ \ char\ c\ \=\ in.readChar();\r\n\ \ \ \ \ \ \ \ \ \ \ \ out.writeCode(tab[c]);\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ in.close();\r\n\ \ \ \ \ \ \ \ out.close();\r\n\ \ \ \ \ \ \ \ return\ tree;\r\n\ \ \ \ }\r\n\ \ \ \ \r\n\ \ \ \ //procedura\ di\ decompressione\r\n\ \ \ \ public\ static\ void\ decompress(String\ src,\ String\ dst,\ Node\ root){\r\n\ \ \ \ \ \ \ \ InputTextFile\ in\ \=\ new\ InputTextFile(src);\r\n\ \ \ \ \ \ \ \ OutputTextFile\ out\ \=\ new\ OutputTextFile(dst);\r\n\ \ \ \ \ \ \ \ int\ count\ \=\ root.weight();\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ for(int\ i\=0;i<count;i\=i+1){\r\n\ \ \ \ \ \ \ \ \ \ \ \ char\ c\ \=\ restoreChar(in,root);\r\n\ \ \ \ \ \ \ \ \ \ \ \ out.writeChar(c);\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ in.close();\r\n\ \ \ \ \ \ \ \ out.close();\r\n\ \ \ \ }\r\n\ \ \ \ \r\n\ \ \ \ private\ static\ char\ restoreChar(InputTextFile\ in,\ Node\ n){\r\n\ \ \ \ \ \ \ \ do{\r\n\ \ \ \ \ \ \ \ \ \ \ \ int\ bit\ \=\ in.readBit();\r\n\ \ \ \ \ \ \ \ \ \ \ \ if\ (bit\ \=\=\ 0){\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ n\ \=\ n.left();\r\n\ \ \ \ \ \ \ \ \ \ \ \ }\ else\ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ n\ \=\ n.right();\r\n\ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ }while(\!n.isLeaf());\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ return\ n.symbol();\r\n\ \ \ \ }\r\n
+comment6.params=src\ dst
+comment6.target=void\ decompress(java.lang.String,\ java.lang.String)
+comment7.params=in\ n
+comment7.target=char\ restoreChar(huffman_toolkit.InputTextFile,\ Node)
+comment8.params=n
+comment8.target=java.lang.String\ flatTree(Node)
+comment9.params=in
+comment9.target=Node\ restoreTree(huffman_toolkit.InputTextFile)
+numComments=10

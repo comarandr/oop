@@ -1,0 +1,510 @@
+0)	NUL		 	Null char
+1
+
+1)		 		Start of Heading
+1
+
+2)	STX		 	Start of Text
+1
+
+3)	ETX		 	End of Text
+1
+
+4)	EOT		 	End of Transmission
+1
+
+5)	ENQ		 	Enquiry
+1
+
+6)	ACK		 	Acknowledgment
+1
+
+7)	BEL		 	Bell
+1
+
+8)	BS		 	Back Space
+1
+
+9)	HT		 	Horizontal Tab
+1
+
+10)	LF		 	Line Feed
+1
+
+11)	VT		 	Vertical Tab
+1
+
+12)	FF		 	Form Feed
+1
+
+13)	CR		 	Carriage Return
+1
+
+14)	SO		 	Shift Out / X-On
+1
+
+15)	SI		 	Shift In / X-Off
+1
+
+16)	DLE		 	Data Line Escape
+1
+
+17)	DC1		 	Device Control 1 (oft. XON)
+1
+
+18)	DC2		 	Device Control 2
+1
+
+19)	DC3		 	Device Control 3 (oft. XOFF)
+1
+
+20)	DC4		 	Device Control 4
+1
+
+21)	NAK		 	Negative Acknowledgement
+1
+
+22)	SYN		 	Synchronous Idle
+1
+
+23)	ETB		 	End of Transmit Block
+1
+
+24)	CAN		 	Cancel
+1
+
+25)	EM		 	End of Medium
+1
+
+26)	SUB		 	Substitute
+1
+
+27)	ESC		 	Escape
+1
+
+28)	FS		 	File Separator
+1
+
+29)	GS		 	Group Separator
+1
+
+30)	RS		 	Record Separator
+1
+
+31)	US		 	Unit Separator
+1
+
+32)	 		 	Space
+1636
+
+33)	!	!	 	Exclamation mark
+1
+
+34)	"	"	"	Double quotes (or speech marks)
+1
+
+35)	#	#	 	Number
+1
+
+36)	$	$	 	Dollar
+1
+
+37)	%	%	 	Procenttecken
+1
+
+38)	&	&	&	Ampersand
+1
+
+39)	'	'	 	Single quote
+1
+
+40)	(	(	 	Open parenthesis (or open bracket)
+1
+
+41)	)	)	 	Close parenthesis (or close bracket)
+1
+
+42)	*	*	 	Asterisk
+1
+
+43)	+	+	 	Plus
+1
+
+44)	,	,	 	Comma
+1
+
+45)	-	-	 	Hyphen
+1
+
+46)	.	.	 	Period, dot or full stop
+1
+
+47)	/	/	 	Slash or divide
+1
+
+48)	0	0	 	Zero
+1
+
+49)	1	1	 	One
+1
+
+50)	2	2	 	Two
+1
+
+51)	3	3	 	Three
+1
+
+52)	4	4	 	Four
+1
+
+53)	5	5	 	Five
+1
+
+54)	6	6	 	Six
+1
+
+55)	7	7	 	Seven
+1
+
+56)	8	8	 	Eight
+1
+
+57)	9	9	 	Nine
+1
+
+58)	:	:	 	Colon
+4
+
+59)	;	;	 	Semicolon
+1
+
+60)	<	<		Less than (or open angled bracket)
+1
+
+61)	=	=	 	Equals
+1
+
+62)	>	>	>	Greater than (or close angled bracket)
+1
+
+63)	?	?	 	Question mark
+1
+
+64)	@	@	 	At symbol
+1
+
+65)	A	A	 	Uppercase A
+6
+
+66)	B	B	 	Uppercase B
+1
+
+67)	C	C	 	Uppercase C
+2
+
+68)	D	D	 	Uppercase D
+3
+
+69)	E	E	 	Uppercase E
+9
+
+70)	F	F	 	Uppercase F
+2
+
+71)	G	G	 	Uppercase G
+2
+
+72)	H	H	 	Uppercase H
+4
+
+73)	I	I	 	Uppercase I
+5
+
+74)	J	J	 	Uppercase J
+1
+
+75)	K	K	 	Uppercase K
+1
+
+76)	L	L	 	Uppercase L
+3
+
+77)	M	M	 	Uppercase M
+2
+
+78)	N	N	 	Uppercase N
+5
+
+79)	O	O	 	Uppercase O
+5
+
+80)	P	P	 	Uppercase P
+1
+
+81)	Q	Q	 	Uppercase Q
+1
+
+82)	R	R	 	Uppercase R
+4
+
+83)	S	S	 	Uppercase S
+4
+
+84)	T	T	 	Uppercase T
+6
+
+85)	U	U	 	Uppercase U
+2
+
+86)	V	V	 	Uppercase V
+1
+
+87)	W	W	 	Uppercase W
+2
+
+88)	X	X	 	Uppercase X
+1
+
+89)	Y	Y	 	Uppercase Y
+1
+
+90)	Z	Z	 	Uppercase Z
+1
+
+91)	[	[	 	Opening bracket
+1
+
+92)	\	\	 	Backslash
+1
+
+93)	]	]	 	Closing bracket
+1
+
+94)	^	^	 	Caret - circumflex
+1
+
+95)	_	_	 	Underscore
+1
+
+96)	`	`	 	Grave accent
+1
+
+97)	a	a	 	Lowercase a
+688
+
+98)	b	b	 	Lowercase b
+127
+
+99)	c	c	 	Lowercase c
+238
+
+100)	d	d	 	Lowercase d
+361
+
+101)	e	e	 	Lowercase e
+1078
+
+102)	f	f	 	Lowercase f
+188
+
+103)	g	g	 	Lowercase g
+170
+
+104)	h	h	 	Lowercase h
+517
+
+105)	i	i	 	Lowercase i
+591
+
+106)	j	j	 	Lowercase j
+13
+
+107)	k	k	 	Lowercase k
+66
+
+108)	l	l	 	Lowercase l
+341
+
+109)	m	m	 	Lowercase m
+204
+
+110)	n	n	 	Lowercase n
+573
+
+111)	o	o	 	Lowercase o
+637
+
+112)	p	p	 	Lowercase p
+163
+
+113)	q	q	 	Lowercase q
+8
+
+114)	r	r	 	Lowercase r
+508
+
+115)	s	s	 	Lowercase s
+537
+
+116)	t	t	 	Lowercase t
+769
+
+117)	u	u	 	Lowercase u
+234
+
+118)	v	v	 	Lowercase v
+83
+
+119)	w	w	 	Lowercase w
+200
+
+120)	x	x	 	Lowercase x
+13
+
+121)	y	y	 	Lowercase y
+167
+
+122)	z	z	 	Lowercase z
+6
+
+123)	{	{	 	Opening brace
+1
+
+124)	|	|	 	Vertical bar
+1
+
+125)	}	}	 	Closing brace
+1
+
+126)	~	~	 	Equivalency sign - tilde
+1
+
+127)			 	Delete
+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
