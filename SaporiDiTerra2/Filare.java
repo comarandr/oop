@@ -7,9 +7,10 @@ import java.util.*;
  * Conosce: le allocazioni correnti e lo storico delle produzioni,
  * Sa fare: allocare colture, registrare produzioni, calcolare rese
  */
-class Filare {
+class Filare implements Observable{
     private final Map<Coltura, Double> allocazioniColture = new HashMap<>();
     private final List<Produzione> produzioni = new ArrayList<>();
+    private final List<Observer> observers = new ArrayList<>(); //lista di osservatori
 
     /**
      * Funzione di astrazione:
@@ -51,9 +52,6 @@ class Filare {
             alloca la coltura con la sua percentuale
          */
 
-
-
-
         if (nomeColtura == null || nomeColtura.trim().isEmpty())
             throw new IllegalArgumentException("Il nome della coltura non può essere vuoto");
         if (percentuale <= 0 || percentuale > 100)
@@ -73,8 +71,9 @@ class Filare {
                 String.format("Spazio insufficiente nel filare. Disponibile: %.2f%%, Richiesto: %.2f%%",
                             100 - percentualeOccupata, percentuale));
         }
-
+        //qui mi cambia la percentuale; da percentualeOccupata a parcentualeOccupata + percentuale
         allocazioniColture.put(nomeColtura, percentuale);
+        notifyObservers();
     }
 
     /**
@@ -116,4 +115,19 @@ class Filare {
     public Collection<Object> getProduzioni() {
         return null;
     }
+
+    @Override //permette al compilatore di controllare se il metodo è effettivamente un override
+    public void addObserver(Observer observer) {
+        if <observers.contains(observer)> {
+            throw new DuplicateObserverException("Osservatore già presente");
+        }
+    }
+
+    @Override //aiuta anche il programmatore
+    protected void notifyObservers() {
+        for (Observer observer : observers) { //prende elenco osservatori
+            observer.update(); //chiamare l'update di ogni osservatore
+        }
+    }
 }
+

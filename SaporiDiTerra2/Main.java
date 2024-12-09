@@ -9,6 +9,9 @@ import java.util.Iterator;
 class Main {
     public static void main(String[] args) {
         try {
+            Configuratore config = new Configuratore();
+            AziendaAgricola azienda = config.configuraAzienda();
+
             // Creazione dell'azienda
             AziendaAgricola azienda = new AziendaAgricola();
 
@@ -60,7 +63,20 @@ class Main {
             ResaDTO rr = new ResaDTO(40.0, 10.5);
             double abc = rr.quantitaProdottaInAssoluto;
 
-//
+//          esempi con dashboard passive
+
+            DashboardPassiva dbRag = azienda.getDashboardPerRagioniere();
+            //cosa voglio fare con dbRag?
+            //dbRag.calcolaMetriDisponibili();
+            //dbRag.calcolaMetriOccupati();
+            //dbRag.calcolaMetriOccupati("pomodori");
+            //dbRag.calcolaMetriOccupati(Periodo.MESE);
+
+
+
+
+
+
 //            filare1.registraProduzione("Insalata",
 //                new Produzione(50.0, 20.0, LocalDate.now()));
 //

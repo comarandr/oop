@@ -15,6 +15,7 @@ public class Dashboard {
     private RegistroProduzioni registroProduzioni;
 
     public Dashboard(RegistroProduzioni registroProduzioni) {
+        //non è una buona scelta passare il registroProduzioni come parametro(subottimale)
         this.registroProduzioni = registroProduzioni;
     }
 
