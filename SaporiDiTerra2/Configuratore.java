@@ -10,12 +10,12 @@ public class Configuratore {
         Filare f1 = new Filare();
         Filare f2 = new Filare();
         //aggiungere i filari agli appezzamenti
-        DashboardPassiva dashboardPerDirigente = new DashboardPassiva();
-        DashboardPassiva dashboardPerRagioniere = new DashboardPassiva();
-        azienda.add
-        azienda.add
-        f1.addObserver(dashboardPerDirigente);
-        f1.addObserver(dashboardPerRagioniere);
+        DashboardPassiva dashboardSuTerreno = new DashboardPassiva();
+        DashboardPassiva dashboardSuProduzione = new DashboardPassiva();
+        azienda.addDashboard(dashboardSuTerreno);
+        azienda.addDashboard(dashboardSuProduzione);
+        f1.addObserver(dashboardSuTerreno);
+        f1.addObserver(dashboardSuProduzione);
 
         return az;
     }

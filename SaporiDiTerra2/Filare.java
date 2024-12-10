@@ -11,7 +11,8 @@ class Filare implements Observable{
     private final Map<Coltura, Double> allocazioniColture = new HashMap<>();
     private final List<Produzione> produzioni = new ArrayList<>();
     private final List<Observer> observers = new ArrayList<>(); //lista di osservatori
-
+    private UUID idFilare = UUID.randomUUID();
+    private Double lunghezza;
     /**
      * Funzione di astrazione:
      * allocazioniColture contiene le colture attualmente allocate nel filare,
@@ -124,7 +125,7 @@ class Filare implements Observable{
     }
 
     @Override //aiuta anche il programmatore
-    protected void notifyObservers() {
+    protected void notifyObservers( UUID idFilare,Double v, Double lunghezza) {
         for (Observer observer : observers) { //prende elenco osservatori
             observer.update(); //chiamare l'update di ogni osservatore
         }
